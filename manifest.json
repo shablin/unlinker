@@ -1,0 +1,14 @@
+{
+  "name": "Unlinker (by @shablin)",
+  "description": "Blocks specific links on the web page",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": [],
+  "content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+    }
+  ]
+}
